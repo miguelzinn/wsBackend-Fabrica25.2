@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lyrics Finder 🎶</title>
+</head>
+<body>
+    <h1><a href="{% url 'home' %}">Lyrics Finder</a></h1>
+    <nav>
+        <a href="{% url 'artista-list' %}">Artistas</a> |
+        <a href="{% url 'musica-list' %}">Músicas</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<h2>Músicas</h2>
+<a href="{% url 'musica-create' %}">Nova Música</a>
+<ul>
+    {% for musica in object_list %}
+        <li><a href="{% url 'musica-detail' musica.pk %}">{{ musica.titulo }}</a> - {{ musica.artista.nome }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
