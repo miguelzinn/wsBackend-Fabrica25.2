@@ -23,10 +23,10 @@ Requisitos:
 
 Instalação:
 1. Clone o repositório
-2. Crie um ambiente virtual
-3. Instale as dependências com "pip install -r requirements.txt"
-4. Execute as migrações com "python manage.py migrate"
-5. Inicie o servidor com "python manage.py runserver"
+2. Crie um ambiente virtual ```python -m venv venv``` // ```.\venv\Scripts\activate```
+3. Instale as dependências com ```pip install -r requirements.txt```
+4. Execute as migrações com ```python manage.py migrate```
+5. Inicie o servidor com ```python manage.py runserver```
 
 Arquivos importantes:
 - .gitignore → ignora arquivos desnecessários
